@@ -1,0 +1,13 @@
+:host{
+    width: 25%;
+}
+
+@media (max-width: 600px) {
+    :host{
+        width: 100%;
+    }  
+}
+
+.kanban-column {
+    border: 2px black solid;
+}

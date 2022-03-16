@@ -1,0 +1,10 @@
+<div class="kanban-column">
+    <header class="column-title"> column header</header>
+    <div *ngFor="let card of cards">
+        <app-kanban-card 
+        [cardInfo]="card"
+        (moveCard)="moveCardFromColumn($event)"
+        ></app-kanban-card>
+    </div>
+    <app-add-a-card-button (createNewCard)="passNewCardDataToParent($event)"></app-add-a-card-button>
+</div>

@@ -1,0 +1,28 @@
+/* FontMontserrat */
+
+.kanban-nav{
+    padding: 24px;
+    text-align: center;
+    background: #00A19A;
+    height: 40px;
+    font-size: 32px;
+}
+
+.column-container {
+    display: flex;
+    margin: 64px 24px 0 24px;
+}
+
+@media (max-width: 600px) {
+    .column-container {
+        flex-direction: column;
+    }
+}
+
+app-kanban-column {
+    margin-right: 16px;
+}
+app-kanban-column:last-child {
+    margin-right: 0;
+}
+
